@@ -1,0 +1,52 @@
+﻿
+@model login_registration.Models.User
+<h1>Sign up Form</h1>
+<form asp-controller="Home" asp-action="Signup" method="POST">
+    <br>
+    <label asp-for="first_name"></label>
+    <input asp-for="first_name"/>
+    <br>
+    <span asp-validation-for="first_name" class="text-danger"></span>
+    <br>
+    <label asp-for="last_name"></label>
+    <input asp-for="last_name"/>
+    <br>
+    <span asp-validation-for="last_name" class="text-danger"></span>
+    <br>
+    <label asp-for="email"></label>
+    <input asp-for="email"/>
+    <br>
+    <span asp-validation-for="email" class="text-danger"></span>
+    <br>
+    <label asp-for="password"></label>
+    <input asp-for="password"/>
+    <br>
+    <span asp-validation-for="password" class="text-danger"></span>
+    <br>
+    <label asp-for="password_confirmation"></label>
+    <input asp-for="password_confirmation"/>
+    <br>
+    <span asp-validation-for="password_confirmation" class="text-danger"></span>
+    <br>
+    <button type="submit">Create new User</button>
+</form>
+
+
+<h1>Log in Form</h1>
+<form action="/login" method="POST">
+    <br>
+    
+    <label asp-for="email"></label>
+    <input asp-for="email"/>
+    <br>
+    <span class="text-danger">@TempData["log_error"]</span>
+    <br>
+    <label asp-for="password"></label>
+    <input asp-for="password"/>
+    <br>
+    <span class="text-danger">@TempData["psw_error"]</span>
+    <br>
+    <input type="submit" value="Login">
+</form>
+
+

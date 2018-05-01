@@ -1,0 +1,53 @@
+
+@model login_registration.Models.Message
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Message Wall</a>
+            </div>
+            <span class="float-right">
+                <span class="navbar-brand">Welcome @ViewBag.username</span>
+                <a class="navbar-brand" href="/">log off</a>
+            </span>
+        </div>
+</nav>
+
+
+<form asp-controller="Wall" asp-action="PostMessage" method="POST">
+    <br>
+    <label asp-for="message"></label>
+    <br>
+    <textarea asp-for="message"></textarea>
+    <br>
+    <button type="submit">Post a message</button>
+    <br>
+</form>
+
+
+
+@foreach (var message in ViewBag.allMessages)
+{
+    <p>@message["name"] - @message["date"]</p>
+    <p>@message["message"]</p>
+
+    @foreach(var comment in @ViewBag.allComments)
+    {
+        if(@comment["message_id"] == @message["id"])
+        {
+            <p>@comment["name"] - @comment["date"]</p>
+            <p>@comment["comment"]</p>
+        }
+    }
+
+    <form action="/post/comment" method="POST">
+    <input type="hidden" name="msg_id" value="@message["id"]">
+   
+        <br>
+        <span>Post a Comment</span>
+        <br>
+        <textarea name="comment"></textarea>
+        <button type="submit">Post a comment</button>
+        <br>
+    </form>
+} 

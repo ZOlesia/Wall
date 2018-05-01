@@ -1,0 +1,10 @@
+C:\Users\56ole\Documents\DOJO\DojoAssignments\netCore\ASP\login_registration\bin\Debug\netcoreapp2.0\login_registration.deps.json
+C:\Users\56ole\Documents\DOJO\DojoAssignments\netCore\ASP\login_registration\bin\Debug\netcoreapp2.0\login_registration.runtimeconfig.json
+C:\Users\56ole\Documents\DOJO\DojoAssignments\netCore\ASP\login_registration\bin\Debug\netcoreapp2.0\login_registration.runtimeconfig.dev.json
+C:\Users\56ole\Documents\DOJO\DojoAssignments\netCore\ASP\login_registration\bin\Debug\netcoreapp2.0\login_registration.dll
+C:\Users\56ole\Documents\DOJO\DojoAssignments\netCore\ASP\login_registration\bin\Debug\netcoreapp2.0\login_registration.pdb
+C:\Users\56ole\Documents\DOJO\DojoAssignments\netCore\ASP\login_registration\obj\Debug\netcoreapp2.0\login_registration.csproj.CoreCompileInputs.cache
+C:\Users\56ole\Documents\DOJO\DojoAssignments\netCore\ASP\login_registration\obj\Debug\netcoreapp2.0\login_registration.AssemblyInfoInputs.cache
+C:\Users\56ole\Documents\DOJO\DojoAssignments\netCore\ASP\login_registration\obj\Debug\netcoreapp2.0\login_registration.AssemblyInfo.cs
+C:\Users\56ole\Documents\DOJO\DojoAssignments\netCore\ASP\login_registration\obj\Debug\netcoreapp2.0\login_registration.dll
+C:\Users\56ole\Documents\DOJO\DojoAssignments\netCore\ASP\login_registration\obj\Debug\netcoreapp2.0\login_registration.pdb
